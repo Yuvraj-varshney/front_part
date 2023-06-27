@@ -1,6 +1,6 @@
 import { Cancel, Room } from "@material-ui/icons";
 import axios from "axios";
-import { useRef, useState ,navigate} from "react";
+import { useRef, useState } from "react";
 import "./login.css";
 import { useNavigate } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ export default function Login({ setShowLogin,myStorage,setCurrentUsername}) {
        setShowLogin(false)
       setError(false);
 
-      navigate('/');  
+    
 
     } catch (err) {
       setError(true);
