@@ -17,7 +17,7 @@ export default function Login({ setShowLogin,myStorage,setCurrentUsername}) {
     };
     // console.log(user);
     try {
-      const res = await axios.post("/users/login",user);
+      const res = await axios.post("https://map-pinning-app-api.onrender.com/users/login",user);
       
       //   console.log(res);
       myStorage.setItem("user", res.data.username);

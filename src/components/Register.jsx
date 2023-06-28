@@ -17,7 +17,7 @@ import axios from "axios";
     password:passwordRef.current.value,
    };
    try{
-     await axios.post("/users/register",newUser);
+     await axios.post("https://map-pinning-app-api.onrender.com/users/register",newUser);
      setError(false);
      setSuccess(true);
     
