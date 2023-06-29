@@ -50,5 +50,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://map-pinning-app-api.onrender.com/api"
+  "proxy": "http://map-pinning-app.onrender.com/api"
 }
