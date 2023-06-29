@@ -33,7 +33,7 @@ function Home() {
    useEffect(()=>{
     const getPins = async ()=>{
       try{
-const res = await axios.get("https://map-pinning-app-api.onrender.com/pins")
+const res = await axios.get("/pins")
 setPins(res.data)
       } catch(err){
         console.log(err)
@@ -81,7 +81,7 @@ setPins(res.data)
     };
 
     try {
-      const res = await axios.post("https://map-pinning-app-api.onrender.com/pins", newPin);
+      const res = await axios.post("/pins", newPin);
       setPins([...pins, res.data]);
       setNewPlace(null);
     } catch (err) {
